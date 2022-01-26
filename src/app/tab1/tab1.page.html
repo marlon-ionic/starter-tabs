@@ -12,6 +12,9 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="container">
+    <iframe #eula [src]="safeFrameResourceURL" (load)="frameLoaded($event)"></iframe>
+  <ion-button [disabled]="isScrollingAgreement" (click)="agreeClick()">Agree</ion-button>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
