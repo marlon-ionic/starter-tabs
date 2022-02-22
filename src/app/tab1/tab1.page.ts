@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ScreenOrientation } from '@awesome-cordova-plugins/screen-orientation/ngx';
+import { Platform } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +10,20 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private readonly screenOrientation: ScreenOrientation, private readonly platform: Platform) {
+    this.init();
+  }
+
+
+  private async init(): Promise <void> {
+    if(this.platform.is('hybrid')) {
+      await this.platform.ready();
+      await this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+    }
+
+
+  }
+
+
 
 }
