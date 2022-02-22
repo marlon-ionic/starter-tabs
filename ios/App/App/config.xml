@@ -2,5 +2,34 @@
 <widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <access origin="*" />
   
+  <feature name="IonicNativeAuth">
+    <param name="ios-package" value="IonicNativeAuthPlugin" onload="true"/>
+  </feature>
+
+  <feature name="Device">
+    <param name="ios-package" value="CDVDevice"/>
+  </feature>
+
+  <feature name="InAppBrowser">
+    <param name="ios-package" value="CDVWKInAppBrowser"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="IonicCordovaCommon">
+    <param name="ios-package" value="IonicCordovaCommon" onload="true"/>
+  </feature>
+
+  <feature name="SpinnerDialog">
+    <param name="ios-package" value="CDVSpinnerDialog"/>
+  </feature>
+
+  <feature name="CDVOrientation">
+    <param name="ios-package" value="CDVOrientation"/>
+  </feature>
+
+  <feature name="TealiumPg">
+    <param name="ios-package" value="TealiumPg"/>
+  </feature>
+
   
 </widget>
