@@ -24,3 +24,31 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+
+.container-ctr {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.invalid-input {
+  color: var(--ion-color-danger);
+  margin: .25rem 0;
+}
+
+.input-note {
+  color:gray;
+  font-size: .75rem;
+  margin-top: .5rem;
+}
