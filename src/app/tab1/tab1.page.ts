@@ -20,8 +20,6 @@ export class Tab1Page {
       await this.platform.ready();
       await this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
     }
-
-
   }
 
 
