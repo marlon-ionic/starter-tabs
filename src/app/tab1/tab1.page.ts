@@ -22,9 +22,9 @@ export class Tab1Page implements OnInit {
       password: [undefined, Validators.required],
       num: [undefined]
     });
-    this.platform.ready().then(async () => {
-      await this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
-    });
+    // this.platform.ready().then(async () => {
+    //   await this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+    // });
   }
 
   async ngOnInit(): Promise<void> {
@@ -35,18 +35,17 @@ export class Tab1Page implements OnInit {
     });
       // get current
 
+// // set to landscape
+// await this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
 
-// set to landscape
-await this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
-
-// allow user rotate
-await this.screenOrientation.unlock();
+// // allow user rotate
+// await this.screenOrientation.unlock();
 
 // detect orientation changes
 this.screenOrientation.onChange().subscribe(
    () =>
    this.zone.run(() => {
-     console.log("Orientation Changed");
+     console.log('Orientation Changed');
     })
 );
   }

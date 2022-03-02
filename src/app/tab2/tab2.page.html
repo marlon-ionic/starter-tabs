@@ -13,5 +13,13 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-row>
+    <ion-col size="12" style="margin-top:-10px;">
+    <ion-item class="ion-no-padding input-bottom" lines="none">
+    <ion-input style="margin-bottom:-10px;" autofocus="true" type="tel" maxlength="6" autocomplete="nope" [(ngModel)]="verificationCode" validateName="verificationCode"></ion-input>
+    </ion-item>
+    <div id="verificationErrorId" class="invalid-input" style="display:none;">{{ 'Incorrect verification code. Please re-enter.' }}</div>
+    <div class="global-font-12" style="padding-top:5px;color:gray;">This code will expire in 10 minutes</div>
+    </ion-col>
+    </ion-row>
 </ion-content>
