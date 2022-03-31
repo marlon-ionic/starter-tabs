@@ -10,9 +10,7 @@ import { Platform } from '@ionic/angular';
 })
 export class Tab1Page {
   isUnlocked = false;
-  constructor(private readonly screenOrientation: ScreenOrientation, private readonly platform: Platform) {
-    this.init();
-  }
+  constructor(private readonly screenOrientation: ScreenOrientation, private readonly platform: Platform) { }
 
   async toggle() {
     if(this.platform.is('hybrid')) {
@@ -26,10 +24,11 @@ export class Tab1Page {
     }
   }
 
-  private async init(): Promise <void> {
+  async ionViewDidEnter(): Promise <void> {
     if(this.platform.is('hybrid')) {
       await this.platform.ready();
       await this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
+      this.isUnlocked = false;
     }
   }
 
