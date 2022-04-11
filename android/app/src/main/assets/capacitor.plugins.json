@@ -14,5 +14,9 @@
 	{
 		"pkg": "@capacitor/status-bar",
 		"classpath": "com.capacitorjs.plugins.statusbar.StatusBarPlugin"
+	},
+	{
+		"pkg": "@ionic-enterprise/google-pay",
+		"classpath": "io.ionic.enterprise.googlepay.GooglePay"
 	}
 ]

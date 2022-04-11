@@ -30,6 +30,9 @@
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
+                android:name="com.google.android.gms.wallet.api.enabled"
+                android:value="true" />
+            <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths"></meta-data>
         </provider>
