@@ -27,7 +27,6 @@
               <category android:name="android.intent.category.DEFAULT" />
               <category android:name="android.intent.category.BROWSABLE" />
               <data android:scheme="https" android:host="starter-deep-links.onrender.com" />
-              <data android:scheme="https" android:host="seismicdevelopment.com" android:pathPrefix="/ionic" />
             </intent-filter>
 
         </activity>
