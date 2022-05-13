@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Ion Select
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,17 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <ion-label>Gaming</ion-label>
+      <ion-select placeholder="This placeholder is read as the label">
+        <ion-select-option value="nes">NES</ion-select-option>
+        <ion-select-option value="n64">Nintendo64</ion-select-option>
+        <ion-select-option value="ps">PlayStation</ion-select-option>
+        <ion-select-option value="genesis">Sega Genesis</ion-select-option>
+        <ion-select-option value="saturn">Sega Saturn</ion-select-option>
+        <ion-select-option value="snes">SNES</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
 </ion-content>
