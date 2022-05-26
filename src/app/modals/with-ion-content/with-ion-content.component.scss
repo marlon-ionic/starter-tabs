@@ -1,0 +1,7 @@
+ion-content {
+  display: contents;
+
+  &::part(scroll) {
+    position: static;
+  }
+}
