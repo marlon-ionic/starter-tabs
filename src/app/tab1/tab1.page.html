@@ -12,51 +12,16 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+
 <ion-button color="danger" (click)="present(true)">Present Modal with ion-contnet</ion-button>
 <ion-button color="primary" (click)="present(false)">Present Modal without ion-contnet</ion-button>
 
-<ion-button color="tertiary" (click)="download()">
-  <ion-icon name="add" slot="icon-only"></ion-icon>
-</ion-button>
-<ion-button color="warning" [download]="docFilename" [href]="docUrl">Download File</ion-button>
+
 <ion-button color="secondary" (click)="share()">
-  <ion-icon name="share" slot="icon-only"></ion-icon>
+  <ion-icon name="download" slot="icon-only"></ion-icon>
 </ion-button>
 
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
-   <!-- fab placed to the top end -->
-   <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 
-  <!-- fab placed to the bottom end -->
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="arrow-forward-circle"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <!-- fab placed to the top start -->
-  <ion-fab vertical="top" horizontal="start" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="arrow-back-circle"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <!-- fab placed to the bottom start -->
-  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="arrow-up-circle"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <!-- fab placed to the (vertical) center and start -->
-  <ion-fab vertical="center" horizontal="start" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="share"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 </ion-content>
